@@ -9,11 +9,21 @@
     "icons": {
       "48": "icons/border-48.png"
     },
+    
+    "browser_action": {
+      "default_icon": "icons/beasts-32.png",
+      "default_title": "Keep it flow",
+      "default_popup": "index.html"
+    },
+    "permissions": [
+      "activeTab",
+      "contextMenus"
+    ],
   
     "content_scripts": [
       {
-        "matches": ["*://*.mozilla.org/*"],
-        "js": ["borderify.js"]
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["app.js"]
       }
     ]
   
