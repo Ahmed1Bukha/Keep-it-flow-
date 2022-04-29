@@ -1,11 +1,10 @@
 {
 
     "manifest_version": 2,
-    "name": "Keep it flow",
+    "name": "Keep it",
     "version": "1.0",
   
-    "description": "Best Extension ever. Don't even think about it.",
-    "homepage_url": "https://github.com/AhmedBukha/Keep-it-flow-",
+    "description": "Adds a red border to all webpages matching mozilla.org.",
   
     "icons": {
       "48": "icons/border-48.png"
@@ -13,8 +12,8 @@
   
     "content_scripts": [
       {
-        "matches": ["*://*.youtube.com/*"],
-        "js": ["app.js"]
+        "matches": ["*://*.mozilla.org/*"],
+        "js": ["borderify.js"]
       }
     ]
   
