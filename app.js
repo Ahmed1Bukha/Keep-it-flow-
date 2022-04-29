@@ -7,12 +7,15 @@ const btn = document.querySelector("button")
 
 
 btn.addEventListener('click', function(){
+const gettingCurrent = browser.tabs.getCurrent()
 
-    browser.tabs.executeScript({
-        file: "page-eater.js"
-      });
+titleEx.innerText= gettingCurrent.document.querySelector("h1.style-scope.ytd-video-primary-info-renderer").innerText;
 
-titleEx.innerText=document.querySelector("h1.style-scope.ytd-video-primary-info-renderer");
+ 
+
+
+
+
 
 })
 
