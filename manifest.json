@@ -4,7 +4,8 @@
     "name": "Keep it flow",
     "version": "1.0",
   
-    "description": "Adds a red border to all webpages matching mozilla.org.",
+    "description": "Best Extension ever. Don't even think about it.",
+    "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/beastify",
   
     "icons": {
       "48": "icons/border-48.png"
